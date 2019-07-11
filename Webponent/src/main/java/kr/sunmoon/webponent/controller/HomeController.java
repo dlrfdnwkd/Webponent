@@ -1,4 +1,4 @@
-package kr.sunmoon.webponent;
+package kr.sunmoon.webponent.controller;
 
 import java.text.DateFormat;
 import java.util.Date;
