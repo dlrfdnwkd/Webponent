@@ -156,6 +156,13 @@
 			<artifactId>jackson-databind</artifactId>
 			<version>2.9.2</version>
 		</dependency>
+		<dependency>
+			<groupId>webponent.export.controller.ExportController</groupId>
+			<artifactId>webponent.export.controller.ExportController</artifactId>
+			<version>2.1</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/webPonent-export.jar</systemPath>
+		</dependency>
 	</dependencies>
     <build>
         <plugins>
