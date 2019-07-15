@@ -40,7 +40,7 @@ local.properties
 
 # Package Files #
 *.jar
-!Webponent/src/main/WEB-INF/lib/*.jar
+!Webponent/src/main/webapp/WEB-INF/lib/*.jar
 *.war
 *.nar
 *.ear
