@@ -35,4 +35,13 @@
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
+	<!-- webpotent chart -->
+	<servlet>
+    	<servlet-name>ExportConroller</servlet-name>
+    	<servlet-class>webponent.export.controller.ExportServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    	<servlet-name>ExportConroller</servlet-name>
+    	<url-pattern>/WEB-APP/export/*</url-pattern>
+	</servlet-mapping>
 </web-app>

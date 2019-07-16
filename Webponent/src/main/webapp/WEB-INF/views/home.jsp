@@ -8,6 +8,6 @@
 	<body>
 		<h1>Hello world!</h1>
 		<P>  The time on the server is ${serverTime}. </P>
-		<a href="/webponent/chartPage">차트페이지 이동</a>
+		<a href="/chartPage">차트페이지 이동</a>
 	</body>
 </html>
