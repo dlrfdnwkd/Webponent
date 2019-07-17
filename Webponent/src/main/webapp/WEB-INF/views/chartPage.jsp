@@ -79,18 +79,22 @@
 			            },
 			            format: {
 			                xAxis: null,
-			                yAxis: null
+			                yAxis: function(){
+			                	return "";
+			                }
 			            },
 			            use: {
 			                animate: true,
-			                aCrossLine: true
+			                aCrossLine: false,
+			                tip: false,
+			                reSize: true
 			            }
 			        };
 			        var styles = {
 			            main: {
 			                layout: {
-			                    paddingTop: 30,
-			                    paddingRight: 30,
+			                    paddingTop: 10,
+			                    paddingRight: 10,
 			                    color: '#f8f8f8',
 			                    line: {
 			                        color: '#eaeaea',
@@ -126,8 +130,7 @@
 			                        color: '#666'
 			                    },
 			                    line:{
-			                    	color: '#e3e3e3', 
-			                    	width: 1
+			                    	width: 0
 			                    }
 			                },
 			                yAxis: {
@@ -138,9 +141,7 @@
 			                        align: 'right'
 			                    },
 			                    line:{
-			                    	color: '#cccccc', 
-			                    	width: 1, 
-			                    	opacity: 1
+			                    	width: 0
 			                    }
 			                },
 			                tip: {
@@ -148,17 +149,6 @@
 			                },
 			                series: {
 			                    s1: {
-			                    	area: {
-										normal: {
-											color: [ [0, '#2bcdba'], [100, '#6bdccf'] ],
-											over: { 
-												color: {
-													src: '../export/sample/chart/img/over.png', 
-													color: '#4e6679'
-												} 
-			                				}
-										}
-									},
 			                        line: {
 			                            normal: {
 			                                width: 0,
@@ -170,6 +160,9 @@
 			                        gradient: {
 			                            direction: 'vertical'
 			                        },
+			                        text: {
+			                        	use: true
+			                        }
 			                    },
 			                    s2: {
 			                        line: {
@@ -211,8 +204,8 @@
 			        };
 			        var series = {
 			            "main":{
-							s1: {series: 'column', xaxis: 'yeer', yaxis: 'count'},
-							s2: {series: 'line', xaxis: 'yeer', yaxis: 'count'}
+							s1: {series: 'column', xaxis: 'year', yaxis: 'count'},
+							s2: {series: 'line', xaxis: 'year', yaxis: 'count'}
 						}
 			        };
 			        chart = webponent.chart.init($('.chart01'), options, styles, series);
